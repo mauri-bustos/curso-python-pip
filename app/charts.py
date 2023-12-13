@@ -10,10 +10,10 @@ plot.savefig('pie.png')
 plot.close()
 '''
 
-def generate_bar_charts(labels, values):
+def generate_bar_charts(name, labels, values):
     fig, ax = plot.subplots()
     ax.bar(labels, values)
-    plot.savefig('bar.png')
+    plot.savefig(f'./imgs/{name}.png')
     plot.close()
 
 def generate_pie_charts(labels, values):
